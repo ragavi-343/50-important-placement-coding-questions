@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main() {
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a==0)
+    {
+        printf("it is linear equation");
+    }
+    int d=(b*b)-(4*a*c);
+    double sv=sqrt(abs(d));
+    if(d==0)
+    {
+        printf("roots are real and same \n%f",(double)-b/2*a);
+    }
+    else if(d>0)
+    {
+        printf("%f\n%f",(double)(-b+sv)/(2*a),(double)(-b-sv)/(2*a));
+    }
+    else
+    {
+        printf("%f+i%f\n%f-i%f",(double)-b/2*a,sv/2*a,(double)-b/2*a,sv/2*a);
+        
+    }
+    return 0;
+}
