@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int a,b;
+    scanf("%d",&a,&b);
+    if(!(a^b))
+    {
+        printf("both the numbers are equal");
+    }
+    else
+    {
+        printf("numbers are not equal");
+    }
+
+    return 0;
+}
