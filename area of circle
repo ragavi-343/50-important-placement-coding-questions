@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int r;
+    scanf("%d",&r);
+    if(r<0)
+    {
+        printf("Invalid radius");
+    }
+    else
+    {
+    float a=3.14159365358979*(r*r);
+    printf("%f",a);
+    }
+    return 0;
+}
